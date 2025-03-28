@@ -1,17 +1,17 @@
 // App.tsx
 import React from 'react';
 import Navbar from './Navbar/Navbar';
-import logo from './emco_logo_4.png'; // Èìïîðò âàøåãî ëîãîòèïà
-import Home from './Home/Home'; // Èìïîðòèðóéòå êîìïîíåíò Home
-
+import Home from './Home/Home';
+import ImageComponent from './ImageComponent/ImageComponent';
+import logo from './image.png'; // Ð›Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Navbar
-        logo={<img src={logo} className="App-logo" alt="Logo" />}/>
-       <Home></Home>
-
+        logo={<ImageComponent src={logo} alt="Logo" />} // Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÐ¼ ImageComponent Ð´Ð»Ñ Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿Ð°
+      />
+      <Home />
     </div>
   );
 };
