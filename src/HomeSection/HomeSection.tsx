@@ -1,35 +1,29 @@
 ﻿import React from 'react';
 import './HomeSection.css'; // Импортируем CSS стили
-import Button from '../Button/Button';
 
 interface HomeSectionProps {
-  images: string[];
+  images: string[]; // Массив путей к изображениям
   altText: string;
-  title: string;
-  description: string;
   style?: React.CSSProperties; // Необязательный стиль
+  onImageClick: (index: number) => void; // Обработчик клика по изображению
 }
 
-const HomeSection: React.FC<HomeSectionProps> = ({ images, altText, title, description, style }) => {
+const HomeSection: React.FC<HomeSectionProps> = ({ images, altText, style, onImageClick }) => {
   return (
     <div className="home-section" style={style}>
-      <h2 className="title">{title}</h2>
-      <div className="content-wrapper">
-        <div className="carousel">
-          {images.map((image, index) => (
-            <img key={index} src={image} alt={altText} className="carousel-image" />
-          ))}
-        </div>
-        <div className="description">
-          <p>{description}</p>
-          <Button text="Подробнее" onClick={() => console.log("Контакты")} />
-        </div>
+      <div className="carousel">
+        {images.map((image, index) => (
+          <button
+            key={index}
+            onClick={() => onImageClick(index)} // Обработчик клика
+            style={{ padding: 0, border: 'none', background: 'none' }} // Убираем стили кнопки
+          >
+            <img src={image} alt={altText} className="carousel-image" />
+          </button>
+        ))}
       </div>
-
     </div>
   );
 };
 
 export default HomeSection;
-
-
