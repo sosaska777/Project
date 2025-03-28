@@ -1,9 +1,10 @@
 // App.tsx
 import React from 'react';
 import Navbar from './Navbar/Navbar';
-import Home from './Home/Home';
 import ImageComponent from './ImageComponent/ImageComponent';
-import logo from './image.png'; // Логотип
+import logo from './logo.png'; // ������ ������ ��������
+import Home from './Home/Home'; // ������������ ��������� Home
+
 
 const App: React.FC = () => {
   return (
