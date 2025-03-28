@@ -1,0 +1,76 @@
+.home-section {
+    padding: 1rem; /* Изменил на относительные единицы */
+    display: flex;
+    flex-direction: column; /* По умолчанию - колонки */
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9; /* Свежий фон для секции */
+    border-radius: 0.5rem; /* Закругленные углы */
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1); /* Тень для секции */
+    transition: transform 0.3s ease; /* Анимация при наведении */
+}
+
+.home-section:hover {
+    transform: translateY(-0.25rem); /* Подъем секции при наведении */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row; /* Горизонтальное размещение на больших экранах */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 75rem; /* Максимальная ширина для размещения содержимого (изменил на rem) */
+    margin-top: 1rem; /* Изменил на относительные единицы */
+}
+
+.carousel {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem; /* Закругленные углы карусели */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Тень для карусели */
+}
+
+.carousel-image {
+    width: 100%; /* Заставляем изображения хорошо вписываться в карусель */
+    height: auto;
+    transition: transform 0.5s ease; /* Плавный переход при изменения масштаба для карусели */
+    border-radius: 0.5rem; /* Закругленные углы для изображений */
+}
+
+.description {
+    flex: 1;
+    padding: 1rem; /* Изменил на относительные единицы */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Градиентный фон для описания */
+    border-radius: 0.5rem; /* Закругленные углы для описания */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Тень для блока описания */
+}
+
+.title {
+    font-size: 1.5rem; /* Изменил на относительные единицы */
+    font-weight: bold;
+    margin-bottom: 0.625rem; /* Изменил на относительные единицы */
+    color: #333; /* Цвет заголовка */
+}
+
+/* Медиа-запросы */
+@media (max-width: 768px) { /* Для мобильных устройств */
+    .content-wrapper {
+        flex-direction: column; /* Вертикальное размещение */
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .carousel,
+    .description {
+        width: 100%; /* Занимаем полную ширину */
+        margin-bottom: 1rem; /* Отступ между элементами */
+    }
+
+    .title {
+        font-size: 1.25rem; /* Уменьшаем размер заголовка для мобильных устройств */
+    }
+}

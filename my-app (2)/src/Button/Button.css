@@ -1,0 +1,19 @@
+/* src/Button.css */
+.rounded-button {
+    display: inline-block;
+    background-color: #E2231A; /* основной цвет */
+    color: #FFFFFF; /* белый цвет текста */
+    font-family: 'Gotham Pro', sans-serif; /* шрифт */
+    font-size: 16px; /* размер шрифта */
+    padding: 12px 24px; /* отступы кнопки */
+    border: none; /* без рамки */
+    border-radius: 6px; /* закругление углов */
+    text-align: center; /* выравнивание текста */
+    text-decoration: none; /* без подчеркивания */
+    transition: background-color 0.3s ease; /* плавный переход */
+    cursor: pointer; /* указатель курсора */
+    margin: 10px; /* отступ между кнопками */
+}
+
+.rounded-button:hover {
+    background-color: #1A1A1B; /* 25% темнее при наведении */}
