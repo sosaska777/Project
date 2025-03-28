@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import ImageComponent from './ImageComponent/ImageComponent';
-import logo from './logo.png'; // ������ ������ ��������
+import logo from './logos.png'; // ������ ������ ��������
 import Home from './Home/Home'; // ������������ ��������� Home
 
 

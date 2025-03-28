@@ -1,21 +1,23 @@
 /* src/Navbar.css */
 .navbar {
-    position: fixed; /* Фиксируем навигацию сверху */
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff; /* Цвет фона навбара */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для навбара */
-    z-index: 1000; /* Убедитесь, что навбар выше других элементов */
-    padding: 10px 20px; /* Отступы для навбара */
-  }
-  
-  .navbar-logo {
-    display: flex;
-    align-items: center; /* Центрируем логотип по вертикали */
-  }
-  
-  .navbar-logo img {
-    max-height: 40px; /* Уменьшаем размер логотипа */
-    width: auto; /* Сохраняем пропорции */
-  }
+  position: fixed; /* Фиксируем навигацию сверху */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Цвет фона навбара */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для навбара */
+  z-index: 1000; /* Убедитесь, что навбар выше других элементов */
+  padding: 20px 40px; /* Увеличиваем отступы для навбара */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Центрируем логотип по вертикали */
+  height: 100%; /* Убедитесь, что контейнер логотипа занимает всю высоту навбара */
+}
+
+.navbar-logo img {
+  max-height: 80px; /* Увеличиваем размер логотипа */
+  width: auto; /* Сохраняем пропорции */
+  height: auto; /* Убедитесь, что высота также автоматически подстраивается */
+}
