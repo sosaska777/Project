@@ -1,8 +1,8 @@
 // App.tsx
 import React from 'react';
 import Navbar from './Navbar/Navbar';
-import logo from './emco_logo_4.png'; // Импорт вашего логотипа
-import Home from './Home/Home'; // Импортируйте компонент Home
+import logo from './logo.png'; // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+import Home from './Home/Home'; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Home
 
 
 const App: React.FC = () => {

@@ -1,27 +1,27 @@
-﻿import React from 'react';
+﻿// src/News/News.tsx
+import React from 'react';
 import './News.css';
+import Button from '../Button/Button';
 
 const News: React.FC = () => {
     return (
-        <div className="news-container">
+        <div className="news-container" style={{ backgroundImage: `url(/background-image.png)` }}>
             <div className="background-image">
-                <img src="/logo.jpg" alt="Logo" className="logo" />
                 <div className="background-container">
                     <div className="main-text-container"></div>
-                    <div className="custom-background">
-                        <div className="date-info-container">
-                            Форум молодых работниковугольной промышленности
+                    <div className="text-blocks-container">
+                        <div className="text-block">
+                            <h3 className="date-info-block">Форум молодых работников<br>
+                            </br> угольной промышленности</h3>
                         </div>
-                        <div className="date-info-container">
-                            Сахалинская область, Углегорский район, г. Шахтерск
+                        <div className="text-block">
+                            <h3 className="date-info-block">Сахалинская область, Углегорский район, г. Шахтерск</h3>
                         </div>
-                        <div className="date-info-container1">
-                            28-31 мая 2025 года
+                        <div className="text-block">
+                            <h3 className="date-info-block">28-31 мая 2025 года</h3>
                         </div>
                     </div>
-                    <button onClick={() => console.log('Кнопка Расписание')}>
-                        Расписание
-                    </button>
+                    <Button text="Новости" onClick={() => console.log("Контакты")} />
                 </div>
             </div>
         </div>
