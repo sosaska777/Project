@@ -1,7 +1,6 @@
 ﻿// src/News/News.tsx
 import React from 'react';
 import './News.css';
-import './News-button.css'; // Убедитесь, что импортирован CSS для кнопки (ПОСЛЕ News.css)
 import Button from '../Button/Button';
 import logo from '../logo.png'; // Импортируем изображение
 
