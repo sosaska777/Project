@@ -1,5 +1,6 @@
 // src/Navbar.tsx
 import React from 'react';
+import { Link } from 'react-router-dom'; // Импортируем Link для навигации
 import './Navbar.css';
 
 interface NavbarProps {
@@ -10,7 +11,9 @@ const Navbar: React.FC<NavbarProps> = ({ logo }) => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        {logo}
+        <Link to="/"> {/* Оборачиваем логотип в Link */}
+          {logo}
+        </Link>
       </div>
     </nav>
   );
