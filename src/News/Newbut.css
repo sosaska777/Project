@@ -1,0 +1,23 @@
+/* src/News/Newbut.css */
+.button {
+    padding: 80px 150px; /* Вертикальные и горизонтальные отступы внутри кнопки */
+    border-radius: 25px; /* Закругление углов кнопки */
+    background-color: #ffffff; /* Цвет фона кнопки (синий) */
+    color: rgb(218, 73, 193); /* Цвет текста на кнопке */
+    border: none; /* Убираем рамку у кнопки */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона при наведении */
+
+    position: relative; /* Позволяет использовать margin без влияния на другие элементы */
+    
+    margin-top: 20px; /* Внешний отступ сверху */
+    margin-bottom: -80px; /* Внешний отступ снизу */
+    margin-left: 1450px; /* Внешний отступ слева */
+    margin-right: 10px; /* Внешний отступ справа */
+    
+    font-size: 40px; /* Увеличение размера текста */
+}
+
+.button:hover {
+    background-color: #ffffffd3; /* Цвет фона при наведении (темнее) */
+}

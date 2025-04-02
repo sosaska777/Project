@@ -1,6 +1,7 @@
 ﻿// src/News/News.tsx
 import React from 'react';
 import './News.css';
+import './Newbut.css'; // Импортируем стили для кнопок
 import Button from '../Button/Button';
 import logo from '../logo.png'; // Импортируем изображение
 
@@ -20,7 +21,8 @@ const News: React.FC = () => {
                             <h3 className="date-info-block">28-31 мая 2025 года</h3>
                         </div>
                     </div>
-                    <Button text="Новости" onClick={() => console.log("Контакты")} />
+                    {/* Применяем класс button к компоненту Button */}
+                    <Button text="Новости" onClick={() => console.log("Контакты")} className="button" />
                 </div>
             </div>
         </div>

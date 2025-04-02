@@ -1,18 +1,19 @@
-// src/Button.tsx
+// src/Button/Button.tsx
 import React from 'react';
-import './Button.css';
+import './Button.css'; // Если у вас есть другие стили для кнопки
 
 interface ButtonProps {
-  text: string;
-  onClick?: () => void;
+    text: string;
+    onClick: () => void;
+    className?: string; // Добавляем пропс для класса
 }
 
-const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
-  return (
-    <button className="rounded-button button-font" onClick={onClick}>
-      {text}
-    </button>
-  );
-};
+const Button: React.FC<ButtonProps> = ({ text, onClick, className }) => {
+    return (
+        <button onClick={onClick} className={className}>
+            {text}
+        </button>
+    );
+}
 
 export default Button;
