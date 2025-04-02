@@ -1,6 +1,6 @@
 // src/Button/Button.tsx
 import React from 'react';
-import './Button.css'; // Если у вас есть другие стили для кнопки
+// import './Button.css'; // Remove or comment out this line
 
 interface ButtonProps {
     text: string;
@@ -16,4 +16,4 @@ const Button: React.FC<ButtonProps> = ({ text, onClick, className }) => {
     );
 }
 
-export default Button;
+export default Button; 
