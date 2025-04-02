@@ -1,0 +1,37 @@
+/* News-button.css */
+
+/* Стили для отступов. Используйте margin для внешних отступов */
+.button-wrapper {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1800px;
+    margin-right: 20px;
+    display: inline-block; /* Ensure wrapper respects margins */
+}
+
+.button {
+    /* Базовые стили кнопки (шрифт, цвет, фон и т.д.) */
+    font-size: 46px;
+    padding:100px 180px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.726);
+    border: none;
+    cursor: pointer;
+    border-radius:25px;
+    transition: background-color 0.3s ease;
+    /* Removed display: inline-block; here */
+}
+
+.button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Опционально:  Добавляем стили для disabled состояния */
+.button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.button:disabled:hover {
+    background-color: #cccccc;
+}
