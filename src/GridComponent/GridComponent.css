@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки одинаковой ширины */
+    gap: 20px; /* Промежуток между элементами */
+    padding: 20px; /* Отступы вокруг контейнера */
+}
+
+.grid-item {
+    text-align: center; /* Центрируем текст заголовка */
+}
+.grid-container img {
+    width: 700px; /* Ширина изображения */
+    height: 700px; /* Высота изображения */
+    object-fit: cover; /* Обрезка изображения, чтобы оно вписывалось в квадрат */
+}
