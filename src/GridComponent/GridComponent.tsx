@@ -7,11 +7,11 @@ const GridComponent: React.FC = () => {
     return (
         <div className="grid-container">
             <div className="grid-item">
-                <h2>О. Сахалин</h2>
+               
                 <Sach />
             </div>
             <div className="grid-item">
-                <h2>Углегорский район</h2>
+                
                 <Ugl />
             </div>
         </div>

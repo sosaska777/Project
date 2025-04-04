@@ -22,7 +22,7 @@ const News: React.FC = () => {
                         </div>
                     </div>
                     {/* Применяем класс button к компоненту Button */}
-                    <Button text="Новости" onClick={() => console.log("Контакты")} className="button" />
+                    <Button text="Расписание" onClick={() => console.log("Контакты")} className="button" />
                 </div>
             </div>
         </div>

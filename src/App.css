@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MyCustomFont'; /* Замените на имя вашего шрифта */
+    src: url('./assets/fonts/Inter-Regular.otf') format('truetype'); /* Укажите путь к вашему файлу */
+    font-weight: normal; /* Укажите нужный вес */
+    font-style: normal; /* Укажите нужный стиль */
+}
+
+/* Применение шрифта ко всему проекту */
+body {
+    font-family: 'MyCustomFont', sans-serif; /* Замените на ваше имя шрифта */
+}

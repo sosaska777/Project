@@ -6,6 +6,8 @@ import logo from './logos.png'; // Импорт логотипа
 import Home from './Home/Home'; // Импорт компонента Home
 import Sach from './Sach/Sach'; // Импорт компонента Sach
 import NewsPage from './NewsPage/NewsPage'; // Импорт страницы новостей
+import './App.css'; // Импортируй файл стилей
+
 
 const App: React.FC = () => {
   return (
