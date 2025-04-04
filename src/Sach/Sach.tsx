@@ -13,7 +13,7 @@ const Sach: React.FC = () => {
     const handleImageClick = (index: number) => {
         console.log(`Изображение ${index + 1} было нажато`);
         // Переход на новую страницу, например, "/news/1"
-        navigate(`/news/${index + 1}`); // Замените на нужный путь
+        navigate("/sach"); // Замените на нужный путь
     };
 
     return (
