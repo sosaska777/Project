@@ -14,7 +14,7 @@ const Ugl: React.FC = () => {
     const handleImageClick = (index: number) => {
         console.log(`Изображение ${index + 1} было нажато`);
         // Переход на новую страницу, например, "/news/2"
-        navigate(`/news/${index + 1}`); // Замените на нужный путь
+        navigate(`/ugl`); // Замените на нужный путь
     };
 
     return (

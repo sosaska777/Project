@@ -1,0 +1,17 @@
+/* SachPage.css */
+.sach-page {
+    padding: 20px; /* Отступы вокруг содержимого */
+    max-width: 800px; /* Максимальная ширина страницы */
+    margin: 0 auto; /* Центрирование страницы */
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+}
+
+.sach-page h1 {
+    font-size: 2em; /* Размер заголовка */
+    margin-bottom: 10px; /* Отступ снизу заголовка */
+}
+
+.sach-page p {
+    font-size: 1.2em; /* Размер текста */
+    line-height: 1.5; /* Межстрочный интервал */
+}

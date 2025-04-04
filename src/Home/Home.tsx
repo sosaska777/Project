@@ -9,7 +9,6 @@ const Home: React.FC = () => {
             <div className="sosalimage" style={{ marginTop: '150px', marginLeft: '20px', marginRight: '20px' }}>
                 <img src={`${process.env.PUBLIC_URL}/image.png`} alt="image" className="home-image" />
             </div>
-            
             <News />
             <GridComponent /> {/* Используйте GridComponent для отображения Sach и Ugl */}
             <div className="sosalimage" style={{ marginTop: '150px', marginLeft: '20px', marginRight: '20px' }}>
