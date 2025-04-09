@@ -7,11 +7,12 @@ const GridComponent: React.FC = () => {
     return (
         <div className="grid-container">
             <div className="grid-item">
-               
                 <Sach />
             </div>
             <div className="grid-item">
-                
+                <Ugl />
+            </div>
+            <div className="grid-item">
                 <Ugl />
             </div>
         </div>

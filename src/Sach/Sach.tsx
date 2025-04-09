@@ -6,7 +6,7 @@ const Sach: React.FC = () => {
     const navigate = useNavigate(); // Инициализируем navigate
 
     const newsImages = [
-        `${process.env.PUBLIC_URL}/logo.jpg`,
+        `${process.env.PUBLIC_URL}/Sach.png`,
         // Добавьте другие изображения, если нужно
     ];
 
