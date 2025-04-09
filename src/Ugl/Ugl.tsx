@@ -7,7 +7,7 @@ const Ugl: React.FC = () => {
     const navigate = useNavigate(); // Инициализируем navigate
 
     const uglegorskImages = [
-        `${process.env.PUBLIC_URL}/qwer.png`, // Замените на нужные изображения
+        `${process.env.PUBLIC_URL}/UG.png`, // Замените на нужные изображения
         // Добавьте другие изображения, если нужно
     ];
 
