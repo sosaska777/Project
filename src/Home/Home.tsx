@@ -9,7 +9,13 @@ const Home: React.FC = () => {
             <div className="sosalimage" style={{ marginTop: '150px', marginLeft: '20px', marginRight: '20px' }}>
                 <img src={`${process.env.PUBLIC_URL}/image.png`} alt="image" className="home-image" />
             </div>
-            <News />
+            <News 
+                title="Форум молодых работников угольной промышленности"
+                location="Сахалинская область, Углегорский район, г. Шахтерск"
+                date="28-31 мая 2025 года"
+                buttonText="Расписание"
+                onButtonClick={() => console.log("Кнопка нажата!")}
+            />
             <GridComponent /> {/* Используйте GridComponent для отображения Sach и Ugl */}
             <div className="sosalimage" style={{ marginTop: '150px', marginLeft: '20px', marginRight: '20px' }}>
                 <img src={`${process.env.PUBLIC_URL}/image.png`} alt="image" className="home-image" />

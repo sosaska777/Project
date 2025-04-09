@@ -1,3 +1,7 @@
+/* Добавьте это в ваш файл стилей */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+  
 @font-face {
     font-family: 'MyCustomFont'; /* Замените на имя вашего шрифта */
     src: url('./assets/fonts/Inter-Regular.otf') format('truetype'); /* Укажите путь к вашему файлу */

@@ -7,6 +7,7 @@ import Home from './Home/Home'; // Импорт компонента Home
 import './App.css'; // Импортируй файл стилей
 import SachPage from './NewsPage/SachPage'; // Импорт страницы новостей
 import UglPage from './UglPage/UglPage';
+
 const App: React.FC = () => {
   return (
     <Router>
