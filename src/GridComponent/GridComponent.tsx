@@ -5,15 +5,17 @@ import './GridComponent.css'; // Импортируйте файл стилей
 
 const GridComponent: React.FC = () => {
     return (
-        <div className="grid-container">
-            <div className="grid-item">
-                <Sach />
-            </div>
-            <div className="grid-item">
-                <Ugl />
-            </div>
-            <div className="grid-item">
-                <Ugl />
+        <div className="outer-container"> {/* Добавляем родительский контейнер */}
+            <div className="grid-container">
+                <div className="grid-item">
+                    <Sach />
+                </div>
+                <div className="grid-item">
+                    <Ugl />
+                </div>
+                <div className="grid-item">
+                    {/* Здесь можно добавить другие элементы */}
+                </div>
             </div>
         </div>
     );

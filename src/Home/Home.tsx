@@ -8,7 +8,7 @@ const Home: React.FC = () => {
         <div>
             <div>
             <div className="sosalimage" style={{ marginTop: '150px', marginLeft: '20px', marginRight: '20px' }}>
-                <img src={`${process.env.PUBLIC_URL}/image.png`} alt="image" className="home-image" />
+                <img src={`${process.env.PUBLIC_URL}/sponsor.png`} alt="" className="home-image" />
             </div>
             <News 
                 title="Форум молодых работников угольной промышленности"
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
             <GridComponent /> {/* Используйте GridComponent для отображения Sach и Ugl */}
             </div>
             <div className="sosalimage" style={{ marginTop: '150px', marginLeft: '20px', marginRight: '20px' }}>
-                <img src={`${process.env.PUBLIC_URL}/image.png`} alt="image" className="home-image" />
+                <img src={`${process.env.PUBLIC_URL}/sponsor.png`} alt="" className="home-image" />
             </div>
         </div>
         
