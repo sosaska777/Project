@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'YourFontName'; /* Замените на имя вашего шрифта */
+    src: url('./fonts/your-font-file.ttf') format('truetype'); /* Укажите путь к вашему файлу */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Примените шрифт ко всему проекту */
+  body {
+    font-family: 'YourFontName', sans-serif; /* Замените на имя вашего шрифта */
+  }
