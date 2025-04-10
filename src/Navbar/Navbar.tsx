@@ -15,6 +15,13 @@ const Navbar: React.FC<NavbarProps> = ({ logo }) => {
           {logo}
         </Link>
       </div>
+      <div className="navbar-links">
+        <Link to="/photos">Фото</Link>
+        <Link to="/materials">Материалы</Link>
+        <Link to="/news">Новости</Link>
+        <Link to="/announcements">Объявления</Link>
+        <Link to="/feedback">Обратная связь</Link>
+      </div>
     </nav>
   );
 };
