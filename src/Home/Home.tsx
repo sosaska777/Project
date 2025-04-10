@@ -6,6 +6,7 @@ import './Home.css';
 const Home: React.FC = () => {
     return (
         <div>
+        <div>
             <div className="sosalimage" style={{ marginTop: '150px', marginLeft: '20px', marginRight: '20px' }}>
                 <img src={`${process.env.PUBLIC_URL}/image.png`} alt="image" className="home-image" />
             </div>
@@ -25,4 +26,4 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default Home;  
