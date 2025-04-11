@@ -1,23 +1,25 @@
-/* src/News/Newbut.css */
 .button {
     padding: 80px 150px; /* Вертикальные и горизонтальные отступы внутри кнопки */
     border-radius: 25px; /* Закругление углов кнопки */
-    background-color: #ffffff; /* Цвет фона кнопки (синий) */
+    background-color: #ffffff; /* Цвет фона кнопки (белый) */
     color: rgb(218, 73, 193); /* Цвет текста на кнопке */
     border: none; /* Убираем рамку у кнопки */
     cursor: pointer; /* Курсор при наведении на кнопку */
-    transition: background-color 0.3s ease; /* Плавный переход цвета фона при наведении */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавный переход цвета фона и тени при наведении */
 
     position: relative; /* Позволяет использовать margin без влияния на другие элементы */
     
-    margin-top:80px; /* Внешний отступ сверху */
+    margin-top: 80px; /* Внешний отступ сверху */
     margin-bottom: -80px; /* Внешний отступ снизу */
     margin-left: 1350px; /* Внешний отступ слева */
     margin-right: 10px; /* Внешний отступ справа */
     
     font-size: 40px; /* Увеличение размера текста */
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Добавление тени к кнопке */
 }
 
 .button:hover {
     background-color: #ffffffd3; /* Цвет фона при наведении (темнее) */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.9); /* Увеличение тени при наведении */
 }
