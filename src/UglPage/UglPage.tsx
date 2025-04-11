@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageCarousel from '../ImageCarousel/ImageCarousel'; // Импортируем компонент карусели
 import News from '../News/News'; // Импортируем компонент News
-
+import SponsorImage from '../SponsorImage/SponsorImage';
 const UglPage: React.FC = () => {
     const imageUrls = [
         '/image1.png', // Путь к изображению в папке public/images
@@ -12,7 +12,7 @@ const UglPage: React.FC = () => {
 
     return (
         <div>
-                        <News 
+                <News 
                 title="Заголовок новости" 
                 location="Место проведения" 
                 date="Дата проведения" 
@@ -31,10 +31,6 @@ const UglPage: React.FC = () => {
 
 Район приравнен к районам Крайнего Севера.
             </p>
-            
-            {/* Добавляем компонент News */}
-
-            {/* Другие элементы страницы */}
         </div>
     );
 };
