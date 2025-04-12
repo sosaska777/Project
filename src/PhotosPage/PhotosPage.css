@@ -1,0 +1,36 @@
+/* src/PhotosPage/PhotosPage.css */
+.photos-page {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+}
+
+.photos-title {
+    font-size: 3rem; /* Увеличиваем размер шрифта */
+    font-weight: bold; /* Делаем текст жирным */
+    color: #2c3e50; /* Цвет текста */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Добавляем тень к тексту */
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 20px; /* Промежутки между элементами грида */
+}
+
+.photo-cube {
+    background-color: #f0f0f0; /* Цвет фона для элементов */
+    border-radius: 8px; /* Закругленные углы */
+    overflow: hidden; /* Скрываем переполнение */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для кубиков */
+    
+    width: 500px; /* Фиксированная ширина кубика */
+    height: 500px; /* Фиксированная высота кубика */
+}
+
+.photo-cube img {
+    width: 100%; /* Ширина изображения на всю ширину элемента */
+    height: 100%; /* Высота изображения на всю высоту элемента */
+    object-fit: cover; /* Обеспечивает обрезку изображения при сохранении пропорций */
+}

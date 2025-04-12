@@ -1,0 +1,56 @@
+/* src/MaterialsPage/MaterialsPage.css */
+.materials-page {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    gap: 20px; /* Промежутки между карточками */
+}
+
+.page-title {
+    font-size: 24px; /* Размер шрифта заголовка */
+    font-weight: bold; /* Жирный шрифт */
+    margin-bottom: 20px; /* Отступ снизу от заголовка */
+    text-align: center; /* Центрирование текста */
+}
+
+.material-card {
+    display: flex;
+    border: 1px solid #ccc; /* Рамка вокруг карточки */
+    border-radius: 8px; /* Закругленные углы */
+    overflow: hidden; /* Скрываем переполнение */
+    width: 100%; /* Задаем ширину карточки на 100% родительского контейнера */
+}
+
+.download-section {
+    width: 30%; /* Ширина левой стороны */
+    background-color: #3498db; /* Цвет фона для секции "Скачать" */
+    color: white; /* Цвет текста */
+    display: flex;
+    align-items: center; /* Центрируем текст по вертикали */
+    justify-content: center; /* Центрируем текст по горизонтали */
+}
+
+.info-section {
+    width: 70%; /* Ширина правой стороны */
+    padding: 10px; /* Отступы внутри секции информации */
+}
+
+.material-title {
+    font-weight: bold; /* Жирный шрифт для названия */
+}
+
+.material-description {
+    margin-top: 5px; /* Отступ сверху для описания */
+}
+
+/* Убираем фиксированную высоту и добавляем минимальную высоту для карточек */
+.material-card {
+    min-height: 100px; /* Минимальная высота карточки, можно изменить по желанию */
+}
+
+/* Стили для разделителя */
+.divider {
+    border: none; /* Убираем стандартные стили границы */
+    height: 1px; /* Высота линии */
+    background-color: black; /* Цвет линии */
+    margin: 10px 0; /* Отступы сверху и снизу от линии */
+}
