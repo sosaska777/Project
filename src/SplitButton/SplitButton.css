@@ -1,0 +1,26 @@
+.split-button {
+    position: relative;
+}
+
+.split-button button {
+    padding: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: flex; /* Используем flexbox для вертикального расположения */
+    flex-direction: column; /* Устанавливаем направление колонок */
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000; /* Чтобы меню было поверх других элементов */
+    top: 100%; /* Позиционируем меню под кнопкой */
+    left: 0; /* Выравниваем меню по левому краю кнопки */
+}
+
+.dropdown-menu a {
+    padding: 10px 15px; /* Добавляем отступы */
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Эффект при наведении */
+}

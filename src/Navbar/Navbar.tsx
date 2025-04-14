@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'; // Импортируем Link для навигации
+import { Link } from 'react-router-dom';
 import './Navbar.css';
-import './Navbit.css'; // Импортируем стили для кнопок
+import './Navbit.css';
+import SplitButton from '../SplitButton/SplitButton';
 
 interface NavbarProps {
     logo: React.ReactNode;
@@ -16,14 +17,12 @@ const Navbar: React.FC<NavbarProps> = ({ logo }) => {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
         if (currentScroll > lastScrollTop) {
-            // Прокрутка вниз - скрыть навбар
             setIsVisible(false);
         } else {
-            // Прокрутка вверх - показать навбар
             setIsVisible(true);
         }
 
-        setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll); // Для мобильных устройств или при прокрутке вверх
+        setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll);
     };
 
     const toggleMobileMenu = () => {
@@ -41,21 +40,25 @@ const Navbar: React.FC<NavbarProps> = ({ logo }) => {
     return (
         <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
             <div className="navbar-logo">
-                <Link to="/"> {/* Оборачиваем логотип в Link */}
-                    {logo}
-                </Link>
+                <Link to="/">{logo}</Link>
             </div>
             <div className="navbar-links">
-                {/* Кнопка для открытия/закрытия мобильного меню */}
                 <button className="mobile-menu-button" onClick={toggleMobileMenu}>
                     ☰
                 </button>
                 <div className={`links-container ${isMobileMenuOpen ? 'open' : ''}`}>
-                    <Link to="/photos">Фото</Link>
-                    <Link to="/materials">Материалы</Link>
-                    <Link to="/news">Новости</Link>
-                    <Link to="/announcements">Объявления</Link>
-                    <Link to="/feedback">Обратная связь</Link>
+
+                    {/* Добавляем SplitButton с теми же ссылками */}
+                    <SplitButton 
+                        label="Меню" 
+                        options={[
+                            { label: 'Фото', path: '/photos' },
+                            { label: 'Материалы', path: '/materials' },
+                            { label: 'Новости', path: '/news' },
+                            { label: 'Объявления', path: '/announcements' },
+                            { label: 'Обратная связь', path: '/feedback' },
+                        ]}
+                    />
                 </div>
             </div>
         </nav>
