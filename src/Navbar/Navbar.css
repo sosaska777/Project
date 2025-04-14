@@ -9,6 +9,15 @@
   z-index: 1000; /* Убедитесь, что навбар выше других элементов */
   padding: 10px 20px; /* Отступы для компактности */
   display: flex; /* Используем flexbox для выравнивания элементов */
+  transition: transform 0.3s ease; /* Плавная анимация для сворачивания */
+}
+
+.navbar.hidden {
+  transform: translateY(-100%); /* Скрываем навбар при прокрутке вниз */
+}
+
+.navbar.visible {
+  transform: translateY(0); /* Показываем навбар при прокрутке вверх */
 }
 
 .navbar-logo {
@@ -35,5 +44,5 @@
 }
 
 .navbar-links a:hover {
-  background-color: #9c9c9c; /* Темнее синий цвет при наведении */
+   background-color:#9c9c9c ;/* Темнее синий цвет при наведении */ 
 }

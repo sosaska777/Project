@@ -3,24 +3,85 @@
 }
 
 .split-button button {
-    padding: 10px;
+    /* Стили для основной кнопки */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255); /* Цвет фона кнопки */
+    color: transparent; /* Скрываем текст кнопки */
+    border-radius: 10px; /* Скругление углов */
+    border: none; /* Убираем границу */
+    position: relative; /* Для затемнения */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень на краях кнопки */
 }
 
-.dropdown-menu {
-    position: absolute;
-    display: flex; /* Используем flexbox для вертикального расположения */
-    flex-direction: column; /* Устанавливаем направление колонок */
-    background-color: white;
-    border: 1px solid #ccc;
-    z-index: 1000; /* Чтобы меню было поверх других элементов */
-    top: 100%; /* Позиционируем меню под кнопкой */
-    left: 0; /* Выравниваем меню по левому краю кнопки */
+/* Центрируем символ меню */
+.split-button button::before {
+    content: '☰'; /* Символ меню (гамбургер) */
+    color: purple; /* Фиолетовый цвет символа */
+    font-size: 20px; /* Размер символа */
+    display: block; /* Используем block для центрирования */
+    text-align: center; /* Центрируем текст внутри блока */
 }
 
-.dropdown-menu a {
-    padding: 10px 15px; /* Добавляем отступы */
+/* Затемнение при наведении на кнопку */
+.split-button button:hover {
+    background-color: rgb(201, 201, 201); /* Цвет фона при наведении */
 }
 
-.dropdown-menu a:hover {
-    background-color: #f0f0f0; /* Эффект при наведении */
+/* Скрываем кнопку на ПК */
+@media (min-width: 768px) {
+    .split-button button {
+        display: none; /* Скрываем основную кнопку на ПК */
+    }
+
+    .dropdown-menu {
+        display: flex; /* Располагаем кнопки в ряд по горизонтали */
+        gap: 15px; /* Увеличиваем промежуток между кнопками */
+        padding: 10px; /* Добавляем внутренний отступ для меню */
+        background-color: rgb(255, 255, 255); /* Цвет фона меню для ПК */
+        border-radius: 4px; /* Скругление углов у меню для ПК */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень у меню для ПК */
+    }
+
+    .dropdown-menu a {
+        padding: 10px 20px; /* Увеличиваем внешний отступ кнопок в меню */
+        text-decoration: none;
+        background-color: #007bff; /* Цвет фона кнопок */
+        color: white; /* Цвет текста кнопок */
+        border-radius: 4px; /* Скругление углов у кнопок в меню */
+    }
+}
+
+/* Стили для мобильной версии */
+@media (max-width: 767px) {
+    .dropdown-menu {
+        display: none; /* Скрываем меню по умолчанию */
+        position: absolute; /* Позиционируем меню относительно родителя */
+        top: 100%; /* Располагаем под основной кнопкой */
+        left: -120px;
+        background-color: rgb(255, 255, 255); /* Цвет фона меню */
+        border-radius: 4px; /* Скругление углов у мобильного меню */
+        border: 1px solid #ccc; /* Граница меню для мобильной версии*/
+        z-index: 1000; /* Устанавливаем z-index для отображения над другими элементами */
+        padding-bottom: 10px; 
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        border-radius : 10px ;
+    }
+
+    .dropdown-menu.show {
+        display: block; /* Показываем меню при открытии */
+    }
+
+    .dropdown-menu a {
+        display: block; /* Кнопки располагаются вертикально */
+        padding: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255); /* Цвет текста кнопок в мобильной версии */ 
+        margin-bottom: 10px; /* Отступ между кнопками в мобильной версии */ 
+        background-color:#007bff ;/* Цвет фона кнопок в мобильной версии */ 
+         border-radius : 10px ;/* Скругление углов у кнопок в мобильной версии */ 
+     }
 }

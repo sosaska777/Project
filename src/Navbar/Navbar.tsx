@@ -17,9 +17,9 @@ const Navbar: React.FC<NavbarProps> = ({ logo }) => {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
         if (currentScroll > lastScrollTop) {
-            setIsVisible(false);
+            setIsVisible(false); // Прокрутка вниз
         } else {
-            setIsVisible(true);
+            setIsVisible(true); // Прокрутка вверх
         }
 
         setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll);
@@ -43,12 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo }) => {
                 <Link to="/">{logo}</Link>
             </div>
             <div className="navbar-links">
-                <button className="mobile-menu-button" onClick={toggleMobileMenu}>
-                    ☰
-                </button>
                 <div className={`links-container ${isMobileMenuOpen ? 'open' : ''}`}>
-
-                    {/* Добавляем SplitButton с теми же ссылками */}
                     <SplitButton 
                         label="Меню" 
                         options={[
