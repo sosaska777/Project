@@ -18,12 +18,18 @@ const MaterialsPage: React.FC = () => {
     },
   ];
 
+  
   return (
     <div className="materials-page">
       <h1 className="page-title">Материалы</h1> {/* Заголовок страницы */}
       {materials.map((material, index) => (
         <div className="material-card" key={index}>
-          <div className="download-section">Скачать</div>
+          <div 
+            className="download-section" 
+            style={{ backgroundImage: `url(/background.png)` }} // Используем путь к изображению из public
+          >
+            Скачать
+          </div>
           <div className="info-section">
             <div className="material-title">{material.title}</div>
             <hr className="divider" />

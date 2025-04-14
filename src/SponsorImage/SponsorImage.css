@@ -1,5 +1,6 @@
 /* src/SponsorImage.css */
 .home-image {
     width: 100%; /* Пример: ширина изображения на 100% */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
+    height: auto; 
+   
   }
