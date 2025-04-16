@@ -1,26 +1,35 @@
 /* src/NewsPage/NewsPage.css */
+
 .news-page {
     display: flex;
     flex-direction: column; /* Вертикальное расположение карточек */
     gap: 20px; /* Промежутки между карточками */
+    padding: 20px; /* Отступы от краев блока */
 }
 
-.news-title {
-    font-size: 24px; /* Размер шрифта заголовка */
+.page-title {
+    font-size: 36px; /* Увеличенный размер шрифта заголовка */
     font-weight: bold; /* Жирный шрифт */
+    margin-bottom: 20px; /* Отступ снизу от заголовка */
     text-align: center; /* Центрирование текста */
-    margin-bottom: 20px; /* Отступ снизу */
+    
+    background-color: #008ea6; /* Фоновый цвет для заголовка */
+    color: #ffffff; /* Цвет текста заголовка */
+    padding: 20px; /* Отступы внутри блока заголовка */
+    border-radius: 12px; /* Закругленные углы для блока заголовка */
 }
 
 .news-card {
     display: flex; /* Горизонтальное расположение изображения и описания */
     border: 1px solid #ccc; /* Рамка вокруг карточки */
-    border-radius: 8px; /* Закругленные углы */
+    border-radius: 12px; /* Закругленные углы для карточки */
     overflow: hidden; /* Скрываем переполнение */
 }
 
 .image-section {
     width: 50%; /* Ширина секции с изображением */
+    border-top-left-radius: 12px; /* Закругление верхнего левого угла изображения */
+    border-bottom-left-radius: 12px; /* Закругление нижнего левого угла изображения */
 }
 
 .news-image {
@@ -31,8 +40,20 @@
 .description-section {
     width: 50%; /* Ширина секции с описанием */
     padding: 10px; /* Отступы внутри секции описания */
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь элемент */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Не повторяем изображение */
+    background-color: #543ab4; /* Фоновый цвет для секции с описанием (фиолетовый) */
+    color: #ffffff; /* Цвет текста в секции описания (белый) */
 }
 
 .news-description {
     font-size: 16px; /* Размер шрифта описания новости */
+}
+
+/* Новый стиль для заголовка в секции описания (если он есть) */
+.description-title {
+    font-size: 24px; /* Размер шрифта заголовка в секции описания */
+    font-weight: bold; /* Жирный шрифт для заголовка в секции описания */
+    color: #ffffff; /* Белый цвет текста заголовка в секции описания */
 }

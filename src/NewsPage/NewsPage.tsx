@@ -4,6 +4,7 @@ import './NewsPage.css'; // Импортируем файл стилей
 
 const NewsPage: React.FC = () => {
   const newsItems = [
+
     {
       description: 'Описание новости 1. Здесь можно добавить больше информации о событии.',
       imageUrl: '/image1.png', // Путь к изображению в папке public
@@ -12,17 +13,19 @@ const NewsPage: React.FC = () => {
       description: 'Описание новости 2. Здесь можно добавить больше информации о событии.',
       imageUrl: '/image2.png', // Путь к изображению в папке public
     },
+    
   ];
 
   return (
     <div className="news-page">
-      <h1 className="news-title">Новости</h1> {/* Заголовок страницы */}
+      <h1 className="page-title">Новости</h1> {/* Заголовок страницы с новым классом */}
       {newsItems.map((item, index) => (
         <div className="news-card" key={index}>
           <div className="image-section">
             <img src={item.imageUrl} alt={`Новость ${index + 1}`} className="news-image" />
           </div>
-          <div className="description-section">
+          <div className="description-section"
+           style={{ backgroundImage: `url(/background.png)` }}>
             <p className="news-description">{item.description}</p>
           </div>
         </div>
