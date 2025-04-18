@@ -1,15 +1,55 @@
-/* Добавьте это в ваш файл стилей */
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-  
-@font-face {
-    font-family: 'MyCustomFont'; /* Замените на имя вашего шрифта */
-    src: url('./assets/fonts/Inter-Regular.otf') format('truetype'); /* Укажите путь к вашему файлу */
-    font-weight: normal; /* Укажите нужный вес */
-    font-style: normal; /* Укажите нужный стиль */
-}
-
-/* Применение шрифта ко всему проекту */
+/* Основной стиль текста */
 body {
     font-family: 'MyCustomFont', sans-serif; /* Замените на ваше имя шрифта */
+    font-size: 2vw; /* Используйте vw для адаптивного размера текста */
+}
+
+/* Пример адаптивного текста для заголовков */
+h1 {
+    font-size: 4vw; /* Заголовок будет занимать 4% от ширины окна */
+}
+
+h2 {
+    font-size: 3.5vw; /* Заголовок второго уровня */
+}
+
+h3 {
+    font-size: 3vw; /* Заголовок третьего уровня */
+}
+
+/* Медиа-запросы для более точной настройки на разных экранах */
+@media (max-width: 768px) {
+    body {
+        font-size: 3.5vw; /* Уменьшение размера текста на меньших экранах */
+    }
+
+    h1 {
+        font-size: 6vw; /* Увеличение размера заголовка на меньших экранах */
+    }
+
+    h2 {
+        font-size: 5.5vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 4vw; /* Дополнительное уменьшение для мобильных устройств */
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 7.5vw;
+    }
+
+    h3 {
+        font-size: 7vw;
+    }
 }
